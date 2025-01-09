@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-file-extractor",
   "version": "0.1.0",
   "description": "",
   "keywords": [
@@ -37,7 +37,7 @@
     "n8nNodesApiVersion": 1,
     "credentials": [],
     "nodes": [
-      "dist/nodes/ExampleNode/file-extractor.node.js"
+      "dist/nodes/file-extractor/file-extractor.node.ts"
     ]
   },
   "dependencies": {
