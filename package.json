@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/james-potter/file-extractor.git"
   },
   "engines": {
     "node": ">=18.10",
@@ -35,14 +35,13 @@
   ],
   "n8n": {
     "n8nNodesApiVersion": 1,
-    "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
-    ],
+    "credentials": [],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/ExampleNode/file-extractor.node.js"
     ]
+  },
+  "dependencies": {
+    "any-text": "^1.2.0"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^7.15.0",
@@ -51,7 +50,8 @@
     "gulp": "^4.0.2",
     "n8n-workflow": "*",
     "prettier": "^3.3.2",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.3",
+    "any-text": "^1.2.0"
   },
   "peerDependencies": {
     "n8n-workflow": "*"
